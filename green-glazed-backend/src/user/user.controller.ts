@@ -9,6 +9,7 @@ export class UserController {
 
   @Post('login')
   create(@Body() createUserDto: CreateUserDto) {
+    console.log('测试登录');
     return this.userService.create(createUserDto);
   }
 
